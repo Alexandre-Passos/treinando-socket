@@ -1,8 +1,8 @@
-import { mensagensRecebidas, inputDeMensagens, botaoEnviar } from './server-socket-front.js';
-
-function verificarMensagem(mensagem) {
-    console.log(mensagem);
-
+function verificarMensagem(texto) {
+    if (typeof texto === 'string') {
+        return texto;
+    }
+    return null; 
 }
 
-export { verificarMensagem }
+export { verificarMensagem };
